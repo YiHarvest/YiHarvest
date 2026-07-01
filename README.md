@@ -13,27 +13,22 @@ My research interests include **biomedical machine learning**, **virtual protein
 [yi@yiharvest.dev](mailto:yi@yiharvest.dev)
 
 </td>
-</td><td valign="top" width="50%">
-<p align="right">
+<td valign="top" width="50%">
+<div align="center">
 
-  ***
+<table>
+<tr><td align="center">
+<strong>Human × AI</strong>
+</td></tr>
+<tr><td align="center">
+<i>人类对 AI，暂时一比零。</i>
+</td></tr>
+<tr><td align="center">
+<code>Human imagination + AI execution.</code>
+</td></tr>
+</table>
 
-  > 人类对 AI，暂时一比零。
-
-  ***
-
-
-  ***
-
-  > Human Vs. AI (1:0)
-
-  ***
-
-  > Human imagination + AI execution.
-
-  ***
-
-</p>
+</div>
 </td>
 </tr></table>
 
