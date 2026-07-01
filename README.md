@@ -159,7 +159,13 @@ JavaScript               1 repo              ███░░░░░░░░�
 
 ### GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YiHarvest&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages">
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=YiHarvest&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="YiHarvest GitHub Stats" />
+</p>
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YiHarvest&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
 
 </td>
 <td valign="top" width="50%">
