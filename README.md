@@ -68,6 +68,59 @@ Building knowledge-driven AI systems with automated reasoning and workflow orche
 ### WakaTime Stats
 
 <!--START_SECTION:waka-->
+![Code Time](http://img.shields.io/badge/Code%20Time-0%20secs-blue?style=flat)
+
+**I'm an Early 🐤** 
+
+```text
+🌞 Morning                13 commits          ██████░░░░░░░░░░░░░░░░░░░   26.00 % 
+🌆 Daytime                34 commits          █████████████████░░░░░░░░   68.00 % 
+🌃 Evening                3 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   06.00 % 
+🌙 Night                  0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+```
+📅 **I'm Most Productive on Thursday** 
+
+```text
+Monday                   2 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   04.00 % 
+Tuesday                  1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   02.00 % 
+Wednesday                6 commits           ███░░░░░░░░░░░░░░░░░░░░░░   12.00 % 
+Thursday                 27 commits          ██████████████░░░░░░░░░░░   54.00 % 
+Friday                   13 commits          ██████░░░░░░░░░░░░░░░░░░░   26.00 % 
+Saturday                 1 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   02.00 % 
+Sunday                   0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in Python** 
+
+```text
+Python                   6 repos             █████████████████░░░░░░░░   66.67 % 
+Java                     1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+Vue                      1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+JavaScript               1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
+```
+
+
+
+**Timeline**
+
+![Lines of Code chart](https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/assets/bar_graph.png)
+
+
+ Last Updated on 01/07/2026 05:58:56 UTC
 <!--END_SECTION:waka-->
 
 ---
