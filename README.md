@@ -1,4 +1,4 @@
-<table style="border-color: transparent;" cellspacing=0 ><tr><td valign="center" width="70%">
+<table style="border-color: transparent;" cellspacing=0 ><tr><td valign="center" width="65%">
 
 **Artificial Intelligence**
 
@@ -13,7 +13,7 @@ My research interests include **biomedical machine learning**, **virtual protein
 [yi@yiharvest.dev](mailto:yi@yiharvest.dev)
 
 </td>
-<td valign="top" width="50%">
+<td valign="top" width="35%">
 <div align="center">
 
 <table>
@@ -27,6 +27,10 @@ My research interests include **biomedical machine learning**, **virtual protein
 <code>Human imagination + AI execution.</code>
 </td></tr>
 </table>
+
+<p align="center">
+  <img src="assets/human-ai-bio.svg" width="280" alt="AI Knowledge Graph Bioinformatics" />
+</p>
 
 </div>
 </td>

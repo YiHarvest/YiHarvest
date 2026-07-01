@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" width="280" height="180">
+  <!-- Background - transparent for GitHub dark theme -->
+  <rect width="280" height="180" fill="transparent"/>
+
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7aa2f7;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#bb9af7;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="helixGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#565f89;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#9aa5ce;stop-opacity:0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Knowledge Graph Nodes -->
+  <g opacity="0.9">
+    <!-- Central AI Node -->
+    <circle cx="90" cy="90" r="12" fill="#7aa2f7" opacity="0.8"/>
+    <text x="90" y="95" font-family="monospace" font-size="10" fill="#c0caf5" text-anchor="middle">AI</text>
+
+    <!-- Knowledge Graph Nodes -->
+    <circle cx="60" cy="50" r="8" fill="url(#nodeGradient)"/>
+    <circle cx="120" cy="50" r="8" fill="url(#nodeGradient)"/>
+    <circle cx="150" cy="90" r="8" fill="url(#nodeGradient)"/>
+    <circle cx="120" cy="130" r="8" fill="url(#nodeGradient)"/>
+    <circle cx="60" cy="130" r="8" fill="url(#nodeGradient)"/>
+
+    <!-- Knowledge Graph Connections -->
+    <line x1="90" y1="90" x2="60" y2="50" stroke="#565f89" stroke-width="1.5" opacity="0.6"/>
+    <line x1="90" y1="90" x2="120" y2="50" stroke="#565f89" stroke-width="1.5" opacity="0.6"/>
+    <line x1="90" y1="90" x2="150" y2="90" stroke="#565f89" stroke-width="1.5" opacity="0.6"/>
+    <line x1="90" y1="90" x2="120" y2="130" stroke="#565f89" stroke-width="1.5" opacity="0.6"/>
+    <line x1="90" y1="90" x2="60" y2="130" stroke="#565f89" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Secondary Connections -->
+    <line x1="60" y1="50" x2="120" y2="50" stroke="#3d59a1" stroke-width="1" opacity="0.4"/>
+    <line x1="120" y1="50" x2="150" y2="90" stroke="#3d59a1" stroke-width="1" opacity="0.4"/>
+    <line x1="150" y1="90" x2="120" y2="130" stroke="#3d59a1" stroke-width="1" opacity="0.4"/>
+    <line x1="120" y1="130" x2="60" y2="130" stroke="#3d59a1" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- DNA/Protein Helix (Abstract) -->
+  <g transform="translate(180, 45)">
+    <!-- Double Helix Structure -->
+    <path d="M 10 0 Q 30 25, 10 50 Q -10 75, 10 100 Q 30 125, 10 135"
+          stroke="#bb9af7" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 30 0 Q 10 25, 30 50 Q 50 75, 30 100 Q 10 125, 30 135"
+          stroke="#7aa2f7" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Helix Connection Lines -->
+    <line x1="10" y1="12" x2="30" y2="12" stroke="url(#helixGradient)" stroke-width="1.5"/>
+    <line x1="10" y1="37" x2="30" y2="37" stroke="url(#helixGradient)" stroke-width="1.5"/>
+    <line x1="10" y1="62" x2="30" y2="62" stroke="url(#helixGradient)" stroke-width="1.5"/>
+    <line x1="10" y1="87" x2="30" y2="87" stroke="url(#helixGradient)" stroke-width="1.5"/>
+    <line x1="10" y1="112" x2="30" y2="112" stroke="url(#helixGradient)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Data Flow Lines -->
+  <g opacity="0.5">
+    <!-- Flow from Knowledge Graph to Helix -->
+    <path d="M 150 90 Q 170 70, 190 55" stroke="#9aa5ce" stroke-width="1" fill="none" stroke-dasharray="4,2"/>
+    <path d="M 150 90 Q 170 100, 190 95" stroke="#9aa5ce" stroke-width="1" fill="none" stroke-dasharray="4,2"/>
+    <path d="M 150 90 Q 170 110, 190 125" stroke="#9aa5ce" stroke-width="1" fill="none" stroke-dasharray="4,2"/>
+  </g>
+
+  <!-- Bioinformatics Label -->
+  <text x="140" y="170" font-family="monospace" font-size="9" fill="#565f89" opacity="0.7" text-anchor="middle">
+    Bioinformatics
+  </text>
+
+  <!-- Subtle Grid Pattern (Background) -->
+  <g opacity="0.1">
+    <line x1="0" y1="45" x2="280" y2="45" stroke="#3d59a1" stroke-width="0.5"/>
+    <line x1="0" y1="135" x2="280" y2="135" stroke="#3d59a1" stroke-width="0.5"/>
+    <line x1="45" y1="0" x2="45" y2="180" stroke="#3d59a1" stroke-width="0.5"/>
+    <line x1="235" y1="0" x2="235" y2="180" stroke="#3d59a1" stroke-width="0.5"/>
+  </g>
+</svg>
