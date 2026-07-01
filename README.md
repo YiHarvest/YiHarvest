@@ -22,7 +22,6 @@ My research interests include **biomedical machine learning**, **virtual protein
 
   ***
 
-<img width="900" align="center" src="https://github-readme-stats.vercel.app/api?username=YiHarvest&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true">
 
   ***
 
