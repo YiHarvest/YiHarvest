@@ -151,13 +151,15 @@ JavaScript               1 repo              ███░░░░░░░░�
 
 ### GitHub Stats
 
+## GitHub Stats
+
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YiHarvest&theme=tokyonight" alt="YiHarvest GitHub Profile Summary" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YiHarvest&theme=github_dark" alt="YiHarvest GitHub Profile Summary" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=YiHarvest&theme=tokyonight" alt="Repos per Language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YiHarvest&theme=tokyonight" alt="Most Commit Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=YiHarvest&theme=github_dark" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YiHarvest&theme=github_dark" alt="Most Commit Language" />
 </p>
 
 </td>
