@@ -151,7 +151,6 @@ JavaScript               1 repo              ███░░░░░░░░�
 
 ### GitHub Stats
 
-## GitHub Stats
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YiHarvest&theme=github_dark" alt="YiHarvest GitHub Profile Summary" />
