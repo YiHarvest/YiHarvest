@@ -12,6 +12,8 @@ My research interests include **biomedical machine learning**, **wechat mini-pro
 
 [yi@yiharvest.dev](mailto:yi@yiharvest.dev)
 
+[Personal Website](https://yharvest-github.ochre-song-6108.chatgpt.site/)
+
 </td>
 <td valign="top" width="35%">
 <div align="center">
@@ -35,6 +37,25 @@ My research interests include **biomedical machine learning**, **wechat mini-pro
 </div>
 </td>
 </tr></table>
+
+## 🐍 Contribution Activity
+
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/output/github-contribution-grid-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/output/github-contribution-grid-snake.svg"
+    />
+    <img
+      alt="YiHarvest contribution snake"
+      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/output/github-contribution-grid-snake.svg"
+    />
+  </picture>
+</div>
 
 <table style="border-color: transparent;" cellspacing=0 ><td valign="top" width="80%">
 
@@ -177,6 +198,8 @@ JavaScript               1 repo              ███░░░░░░░░�
 **联系方式**
 
 [yi@yiharvest.dev](mailto:yi@yiharvest.dev)
+
+[个人网站](https://yharvest-github.ochre-song-6108.chatgpt.site/)
 
 **当前项目**
 
