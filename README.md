@@ -102,7 +102,7 @@ No Activity Tracked This Week
     <!-- 3D_DARK_THEME -->
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-night-rainbow.svg"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-night-green.svg"
     />
     <!-- 3D_LIGHT_THEME -->
     <source
