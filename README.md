@@ -106,17 +106,17 @@ Claude Code              3 hrs 55 mins       ██░░░░░░░░░�
     <!-- 3D_DARK_THEME -->
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-night-view.svg"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-night-rainbow.svg"
     />
     <!-- 3D_LIGHT_THEME -->
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-south-season.svg"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-gitblock.svg"
     />
     <!-- 3D_FALLBACK_THEME -->
     <img
       width="100%"
-      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-south-season.svg"
+      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-gitblock.svg"
       alt="3D contribution graph"
     />
   </picture>
