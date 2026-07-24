@@ -1,0 +1,1 @@
+"""SVG templates for galaxy profile."""

@@ -1,0 +1,84 @@
+# Galaxy Profile Configuration for YiHarvest
+
+# Your GitHub username (required)
+username: YiHarvest
+
+# Profile information displayed in the galaxy header
+profile:
+  name: "YiHarvest"
+  tagline: "Biomedical ML Engineer & Knowledge Graph Explorer"
+  company: "Medical AI Research"
+  location: "China"
+  bio: |
+    Building intelligent systems for healthcare.
+    Passionate about biomedical machine learning, knowledge graphs, and AI automation.
+  philosophy: '"Empowering healthcare through intelligent automation."'
+
+# Social links displayed at the bottom of the profile
+social:
+  email: "yi@yiharvest.dev"
+  website: "https://yiharvest.dev"
+
+# Galaxy arms represent your core focus areas
+# Each arm spirals out from the center with its own color and tech items
+# Available colors: "synapse_cyan", "dendrite_violet", "axon_amber"
+galaxy_arms:
+  - name: "ML/AI"
+    color: "synapse_cyan"
+    items:
+      - "Python"
+      - "PyTorch"
+      - "Scikit-learn"
+      - "FastAPI"
+  - name: "Data Engineering"
+    color: "dendrite_violet"
+    items:
+      - "Neo4j"
+      - "MySQL"
+      - "Docker"
+      - "TypeScript"
+  - name: "Automation"
+    color: "axon_amber"
+    items:
+      - "Agent"
+      - "RPA"
+      - "Shell"
+      - "Git"
+
+# Featured projects shown as constellation stars
+projects:
+  - repo: "YiHarvest/YiHarvest"
+    arm: 0
+    description: "Personal GitHub profile with animated galaxy stats and contributions."
+  - repo: "YiHarvest/waka-readme-stats"
+    arm: 1
+    description: "Forked WakaTime stats integration for GitHub profile README."
+
+# Theme color overrides (optional — using deep space palette defaults)
+theme:
+  void: "#080c14"
+  nebula: "#0f1623"
+  star_dust: "#1a2332"
+  synapse_cyan: "#00d4ff"
+  dendrite_violet: "#a78bfa"
+  axon_amber: "#ffb020"
+  text_bright: "#f1f5f9"
+  text_dim: "#94a3b8"
+  text_faint: "#64748b"
+
+# Stats configuration — which metrics to show on the telemetry card
+stats:
+  metrics:
+    - "commits"
+    - "stars"
+    - "prs"
+    - "issues"
+    - "repos"
+
+# Language display settings
+languages:
+  exclude:
+    - "HTML"
+    - "CSS"
+    - "Makefile"
+  max_display: 8
