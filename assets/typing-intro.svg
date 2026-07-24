@@ -1,0 +1,89 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="760"
+  height="70"
+  viewBox="0 0 760 70"
+  role="img"
+  aria-labelledby="title description"
+>
+  <title id="title">Animated developer introduction</title>
+  <desc id="description">
+    Two English introduction lines type sequentially, remain visible for five seconds,
+    and then repeat.
+  </desc>
+
+  <defs>
+    <style>
+      .typing-text {
+        fill: #ffffff;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-weight: 600;
+        letter-spacing: 0.35px;
+      }
+    </style>
+
+    <clipPath id="line-one-reveal">
+      <rect x="143" y="0" width="0" height="32">
+        <animate
+          attributeName="width"
+          values="0;500;500;0"
+          keyTimes="0;0.25;0.999;1"
+          dur="10s"
+          repeatCount="indefinite"
+        />
+      </rect>
+    </clipPath>
+
+    <clipPath id="line-two-reveal">
+      <rect x="82" y="34" width="0" height="32">
+        <animate
+          attributeName="width"
+          values="0;0;620;620;0"
+          keyTimes="0;0.25;0.5;0.999;1"
+          dur="10s"
+          repeatCount="indefinite"
+        />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <text
+    class="typing-text"
+    x="143"
+    y="23"
+    font-size="18"
+    clip-path="url(#line-one-reveal)"
+  >🎯 Focused · AI &amp; Biomedical Intelligence</text>
+
+  <text
+    class="typing-text"
+    x="82"
+    y="56"
+    font-size="17"
+    font-weight="500"
+    clip-path="url(#line-two-reveal)"
+  >Knowledge Graphs · Machine Learning · Intelligent Systems</text>
+
+  <rect x="143" y="5" width="2" height="22" rx="1" fill="#ffffff">
+    <animate
+      attributeName="x"
+      values="143;643;82;702;702;143"
+      keyTimes="0;0.249;0.25;0.5;0.999;1"
+      dur="10s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="y"
+      values="5;5;38;38;38;5"
+      keyTimes="0;0.249;0.25;0.5;0.999;1"
+      dur="10s"
+      repeatCount="indefinite"
+    />
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur="0.8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+</svg>

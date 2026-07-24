@@ -1,0 +1,83 @@
+name: Generate 3D Contrib
+
+on:
+  schedule:
+    - cron: '10 18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Select random light and dark themes
+        shell: bash
+        run: |
+          light_themes=(
+            "profile-green.svg"
+            "profile-season.svg"
+            "profile-south-season.svg"
+            "profile-gitblock.svg"
+          )
+          dark_themes=(
+            "profile-night-green.svg"
+            "profile-night-rainbow.svg"
+            "profile-night-view.svg"
+          )
+
+          light_theme="${light_themes[RANDOM % ${#light_themes[@]}]}"
+          dark_theme="${dark_themes[RANDOM % ${#dark_themes[@]}]}"
+
+          python - "$light_theme" "$dark_theme" <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+
+          light_theme, dark_theme = sys.argv[1:3]
+          readme_path = Path("README.md")
+          lines = readme_path.read_text(encoding="utf-8").splitlines()
+          selections = {
+              "<!-- 3D_DARK_THEME -->": dark_theme,
+              "<!-- 3D_LIGHT_THEME -->": light_theme,
+              "<!-- 3D_FALLBACK_THEME -->": light_theme,
+          }
+
+          for index, line in enumerate(lines):
+              filename = selections.get(line.strip())
+              if not filename:
+                  continue
+
+              for target in range(index + 1, min(index + 6, len(lines))):
+                  if 'src="' in lines[target] or 'srcset="' in lines[target]:
+                      lines[target] = re.sub(
+                          r"profile-3d-contrib/[^\"?]+\.svg",
+                          f"profile-3d-contrib/{filename}",
+                          lines[target],
+                      )
+                      break
+              else:
+                  raise RuntimeError(f"Theme URL not found after {line.strip()}")
+
+          readme_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+          print(f"Light theme: {light_theme}")
+          print(f"Dark theme: {dark_theme}")
+          PY
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "update 3D contrib graph"; then
+            git push
+          fi
