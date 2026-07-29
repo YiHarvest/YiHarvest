@@ -107,12 +107,12 @@ No Activity Tracked This Week
     <!-- 3D_LIGHT_THEME -->
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-gitblock.svg"
+      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-green.svg"
     />
     <!-- 3D_FALLBACK_THEME -->
     <img
       width="100%"
-      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-gitblock.svg"
+      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-green.svg"
       alt="3D contribution graph"
     />
   </picture>
