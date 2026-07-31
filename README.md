@@ -13,15 +13,6 @@
 <div align="center">
   <img src="./assets/generated/tech-stack.svg" width="850" alt="Tech Stack"/>
 </div>
-
-<br/>
-
-<div align="center">
-  <img src="./assets/generated/projects-constellation.svg" width="850" alt="Featured Projects"/>
-</div>
-
-<br/>
-
 <details>
 <summary><strong>More about me</strong></summary>
 
@@ -65,10 +56,6 @@ Friday                   30 commits          ███░░░░░░░░�
 Saturday                 8 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   02.99 % 
 Sunday                   13 commits          █░░░░░░░░░░░░░░░░░░░░░░░░   04.85 % 
 ```
-
-
-
-
  Last Updated on 31/07/2026 00:11:08 UTC
 <!--END_SECTION:waka-->
 
