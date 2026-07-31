@@ -67,15 +67,6 @@ Sunday                   13 commits          █░░░░░░░░░░�
 ```
 
 
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-```
 
 
  Last Updated on 31/07/2026 00:11:08 UTC
