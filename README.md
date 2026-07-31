@@ -95,31 +95,6 @@ Sunday                   13 commits          █░░░░░░░░░░�
 
 <br/>
 
-<h2 align="center">3D Contributions</h2>
-
-<p align="center">
-  <picture>
-    <!-- 3D_DARK_THEME -->
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-night-rainbow.svg"
-    />
-    <!-- 3D_LIGHT_THEME -->
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-south-season.svg"
-    />
-    <!-- 3D_FALLBACK_THEME -->
-    <img
-      width="100%"
-      src="https://raw.githubusercontent.com/YiHarvest/YiHarvest/main/profile-3d-contrib/profile-south-season.svg"
-      alt="3D contribution graph"
-    />
-  </picture>
-</p>
-
-<br/>
-
 <div align="center">
   <a href="mailto:yi@yiharvest.dev">
     <img src="https://img.shields.io/badge/-Email-080c14?style=for-the-badge&logo=gmail&logoColor=ffffff" alt="Email"/>

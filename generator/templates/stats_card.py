@@ -27,14 +27,14 @@ def render(stats: dict, metrics: list, theme: dict) -> str:
         delay = f"{i * 0.3}s"
 
         cells.append(f'''    <g class="metric-cell" transform="translate({cx}, 95)">
-      <g transform="translate(-8, -30) scale(1)">
+      <g transform="translate(-8, -45) scale(1)">
         <svg viewBox="0 0 16 16" width="16" height="16" fill="{icon_color}" class="metric-icon" style="animation-delay: {delay}">
           {icon_path}
         </svg>
       </g>
-      <text x="0" y="2" text-anchor="middle" fill="{icon_color}" font-size="28" font-weight="bold" font-family="sans-serif" opacity="0.35" filter="url(#num-glow)">{value}</text>
-      <text x="0" y="2" text-anchor="middle" fill="{theme['text_bright']}" font-size="28" font-weight="bold" font-family="sans-serif">{value}</text>
-      <text x="0" y="20" text-anchor="middle" fill="{theme['text_faint']}" font-size="11" font-family="monospace" letter-spacing="1">{label}</text>
+      <text x="0" y="8" text-anchor="middle" fill="{icon_color}" font-size="28" font-weight="bold" font-family="sans-serif" opacity="0.35" filter="url(#num-glow)">{value}</text>
+      <text x="0" y="8" text-anchor="middle" fill="{theme['text_bright']}" font-size="28" font-weight="bold" font-family="sans-serif">{value}</text>
+      <text x="0" y="28" text-anchor="middle" fill="{theme['text_faint']}" font-size="11" font-family="monospace" letter-spacing="1">{label}</text>
     </g>''')
 
         # Vertical divider between cells (not after last)
