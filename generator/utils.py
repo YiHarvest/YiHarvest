@@ -20,10 +20,50 @@ DEFAULT_THEME = {
     "text_faint": "#64748b",
 }
 
+# Light palette used by SVGs when the viewer prefers a light color scheme.
+# Accent colors are intentionally darker than their deep-space counterparts so
+# labels, chart lines, and small icons keep sufficient contrast on white.
+LIGHT_THEME = {
+    "void": "#f6f8fa",
+    "nebula": "#ffffff",
+    "star_dust": "#d0d7de",
+    "synapse_cyan": "#007a8a",
+    "dendrite_violet": "#8250df",
+    "axon_amber": "#9a6700",
+    "text_bright": "#1f2328",
+    "text_dim": "#57606a",
+    "text_faint": "#6e7781",
+}
+
 
 def resolve_theme(user_theme: dict) -> dict:
     """Merge user theme overrides with defaults, returning a complete theme dict."""
     return {**DEFAULT_THEME, **(user_theme or {})}
+
+
+def adaptive_theme_css(theme: dict) -> str:
+    """Return SVG CSS that maps the configured dark palette to light mode.
+
+    The generated SVG keeps literal dark-theme attributes as a robust fallback.
+    In clients that support ``prefers-color-scheme`` (including SVGs embedded as
+    images), these rules override matching presentation attributes in light mode.
+    """
+    light_rules = []
+    for key, light_color in LIGHT_THEME.items():
+        dark_color = theme[key]
+        light_rules.extend([
+            f'        [fill="{dark_color}"] {{ fill: {light_color}; }}',
+            f'        [stroke="{dark_color}"] {{ stroke: {light_color}; }}',
+            f'        [stop-color="{dark_color}"] {{ stop-color: {light_color}; }}',
+            f'        [flood-color="{dark_color}"] {{ flood-color: {light_color}; }}',
+        ])
+
+    return (
+        "      :root { color-scheme: dark light; }\n"
+        "      @media (prefers-color-scheme: light) {\n"
+        + "\n".join(light_rules)
+        + "\n      }"
+    )
 
 
 def resolve_arm_colors(galaxy_arms: list, theme: dict) -> list:

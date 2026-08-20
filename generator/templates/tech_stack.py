@@ -2,7 +2,13 @@
 
 import math
 
-from generator.utils import calculate_language_percentages, esc, svg_arc_path, resolve_arm_colors
+from generator.utils import (
+    adaptive_theme_css,
+    calculate_language_percentages,
+    esc,
+    resolve_arm_colors,
+    svg_arc_path,
+)
 
 WIDTH = 850
 
@@ -284,9 +290,14 @@ def render(
     radar_parts.append(_build_radar_labels_and_dots(sector_data, galaxy_arms, rcx, rcy, radius, theme))
 
     radar_str = "\n".join(radar_parts)
+    theme_css = adaptive_theme_css(theme)
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}">
-  <defs/>
+  <defs>
+    <style>
+{theme_css}
+    </style>
+  </defs>
 
   <!-- Card background -->
   <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="12" ry="12"

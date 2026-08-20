@@ -1,5 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="261" viewBox="0 0 850 261">
-  <defs/>
+  <defs>
+    <style>
+      :root { color-scheme: dark light; }
+      @media (prefers-color-scheme: light) {
+        [fill="#080c14"] { fill: #f6f8fa; }
+        [stroke="#080c14"] { stroke: #f6f8fa; }
+        [stop-color="#080c14"] { stop-color: #f6f8fa; }
+        [flood-color="#080c14"] { flood-color: #f6f8fa; }
+        [fill="#0f1623"] { fill: #ffffff; }
+        [stroke="#0f1623"] { stroke: #ffffff; }
+        [stop-color="#0f1623"] { stop-color: #ffffff; }
+        [flood-color="#0f1623"] { flood-color: #ffffff; }
+        [fill="#1a2332"] { fill: #d0d7de; }
+        [stroke="#1a2332"] { stroke: #d0d7de; }
+        [stop-color="#1a2332"] { stop-color: #d0d7de; }
+        [flood-color="#1a2332"] { flood-color: #d0d7de; }
+        [fill="#00d4ff"] { fill: #007a8a; }
+        [stroke="#00d4ff"] { stroke: #007a8a; }
+        [stop-color="#00d4ff"] { stop-color: #007a8a; }
+        [flood-color="#00d4ff"] { flood-color: #007a8a; }
+        [fill="#a78bfa"] { fill: #8250df; }
+        [stroke="#a78bfa"] { stroke: #8250df; }
+        [stop-color="#a78bfa"] { stop-color: #8250df; }
+        [flood-color="#a78bfa"] { flood-color: #8250df; }
+        [fill="#ffb020"] { fill: #9a6700; }
+        [stroke="#ffb020"] { stroke: #9a6700; }
+        [stop-color="#ffb020"] { stop-color: #9a6700; }
+        [flood-color="#ffb020"] { flood-color: #9a6700; }
+        [fill="#f1f5f9"] { fill: #1f2328; }
+        [stroke="#f1f5f9"] { stroke: #1f2328; }
+        [stop-color="#f1f5f9"] { stop-color: #1f2328; }
+        [flood-color="#f1f5f9"] { flood-color: #1f2328; }
+        [fill="#94a3b8"] { fill: #57606a; }
+        [stroke="#94a3b8"] { stroke: #57606a; }
+        [stop-color="#94a3b8"] { stop-color: #57606a; }
+        [flood-color="#94a3b8"] { flood-color: #57606a; }
+        [fill="#64748b"] { fill: #6e7781; }
+        [stroke="#64748b"] { stroke: #6e7781; }
+        [stop-color="#64748b"] { stop-color: #6e7781; }
+        [flood-color="#64748b"] { flood-color: #6e7781; }
+      }
+    </style>
+  </defs>
 
   <!-- Card background -->
   <rect x="0.5" y="0.5" width="849" height="260" rx="12" ry="12"

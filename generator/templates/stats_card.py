@@ -1,6 +1,12 @@
 """SVG template: Mission Telemetry stats card (850x180)."""
 
-from generator.utils import METRIC_ICONS, METRIC_LABELS, METRIC_COLORS, format_number
+from generator.utils import (
+    METRIC_ICONS,
+    METRIC_LABELS,
+    METRIC_COLORS,
+    adaptive_theme_css,
+    format_number,
+)
 
 WIDTH, HEIGHT = 850, 180
 
@@ -47,10 +53,12 @@ def render(stats: dict, metrics: list, theme: dict) -> str:
 
     cells_str = "\n".join(cells)
     dividers_str = "\n".join(dividers)
+    theme_css = adaptive_theme_css(theme)
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
     <style>
+{theme_css}
       .metric-icon {{
         animation: count-glow 4s ease-in-out infinite;
       }}

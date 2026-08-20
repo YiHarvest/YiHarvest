@@ -1,7 +1,13 @@
 """SVG template: Galaxy Header — the signature spiral galaxy banner (850x280)."""
 
 import math
-from generator.utils import spiral_points, deterministic_random, esc, resolve_arm_colors
+from generator.utils import (
+    adaptive_theme_css,
+    deterministic_random,
+    esc,
+    resolve_arm_colors,
+    spiral_points,
+)
 
 # ── Module-level constants ──
 WIDTH, HEIGHT = 850, 280
@@ -71,7 +77,7 @@ def _build_starfield(username, width, height, theme):
             8: theme.get("axon_amber", "#ffb020"),
         }
         for i in range(n):
-            fill = accent_colors.get(i % 12, "#ffffff")
+            fill = accent_colors.get(i % 12, theme["text_bright"])
 
             delay = f"{sd[i] * 0.3:.1f}s"
             stars.append(
@@ -381,11 +387,13 @@ def render(
     project_stars_str = _build_project_stars(projects, galaxy_arms, arm_colors, all_arm_points)
     orbital_rings = _build_orbital_rings(CENTER_X, CENTER_Y, theme)
     core = _build_galaxy_core(CENTER_X, CENTER_Y, theme, initial)
+    theme_css = adaptive_theme_css(theme)
 
     # ── Assemble SVG ──
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
     <style>
+{theme_css}
       .star-bg {{
         animation: twinkle-slow 7s ease-in-out infinite;
       }}
@@ -447,14 +455,14 @@ def render(
     </radialGradient>
 
     <radialGradient id="core-inner-gradient" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="0%" stop-color="{theme['text_bright']}" stop-opacity="0.6"/>
       <stop offset="40%" stop-color="{theme['synapse_cyan']}" stop-opacity="0.3"/>
       <stop offset="100%" stop-color="{theme['synapse_cyan']}" stop-opacity="0"/>
     </radialGradient>
 
     <linearGradient id="shoot-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0%" stop-color="{theme['text_bright']}" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="{theme['text_bright']}" stop-opacity="0"/>
     </linearGradient>
 
 {glow_filters_str}
